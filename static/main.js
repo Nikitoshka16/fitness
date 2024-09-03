@@ -1,4 +1,4 @@
-const events = [
+const event = [
     {id: 1, date: "2023-09-15", type: "йога", spots: 10, seats: 6 },
     {id: 2, date: "2023-09-16", type: "фитнес", spots: 5, seats: 5 },
     {id: 3, date: "2023-09-17", type: "бокс", spots: 8, seats: 1 },
@@ -9,7 +9,7 @@ const events = [
     {id: 8, date: "2023-09-16", type: "фитнес", spots: 12, seats: 0 },
 ];
 
-const users = [
+const user = [
     {number: "0001", isPaid: true},
     {number: "0002", isPaid: false},
     {number: "0003", isPaid: true},
@@ -81,7 +81,7 @@ function displayEvents(eventsArr) {
 
 function signUp(id) {
     let event = events.find(event => event.id == id);
-    let user = users.find(user => user.number == document.getElementById(id).value);
+    let user = user.find(user => user.number == document.getElementById(id).value);
     
     if(!user) {
         alert("Пользователя с данным номером абонемента не существует!");
