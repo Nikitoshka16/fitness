@@ -1,4 +1,4 @@
-const event = [
+const events = [
     {id: 1, date: "2023-09-15", type: "йога", spots: 10, seats: 6 },
     {id: 2, date: "2023-09-16", type: "фитнес", spots: 5, seats: 5 },
     {id: 3, date: "2023-09-17", type: "бокс", spots: 8, seats: 1 },
